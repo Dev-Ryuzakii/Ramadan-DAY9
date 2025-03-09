@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  h1 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #progress {
+    margin: 20px 0;
+  }
+  
+  #progressBar {
+    height: 20px;
+    background-color: #3498db;
+    border-radius: 10px;
+    width: 0%;
+    transition: width 0.3s ease;
+  }
+  
+  #progressText {
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  #calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .day {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .day.fasted {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  .day.missed {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  #summary {
+    margin-top: 20px;
+  }
+  
+  #summary p {
+    font-size: 18px;
+    color: #2c3e50;
+  }
+  
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 20px;
+    }
+  
+    #calendar {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
